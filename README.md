@@ -5,7 +5,7 @@
 Имена переменных и функций понятные, описательные.
 Код отформатирован Prettier.
 
-Задание 1
+<!-- Задание 1
 В HTML есть список категорий ul#categories.
 
 <ul id="categories">
@@ -52,8 +52,10 @@ Category: Products
 Elements: 3
 
 Category: Technologies
-Elements: 5
+Elements: 5 -->
+
 Задание 2
+
 В HTML есть пустой список ul#ingredients.
 
 <ul id="ingredients"></ul>
@@ -73,6 +75,7 @@ const ingredients = [
 Добавит название ингредиента как его текстовое содержимое.
 Добавит элементу класс item.
 После чего вставит все <li> за одну операцию в список ul.ingredients.
+
 Задание 3
 Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
 
