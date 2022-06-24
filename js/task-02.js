@@ -1,3 +1,4 @@
+"use strict";
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -6,7 +7,15 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-// let some = document.getElementById(`ingredients`);
-// // ingredients.forEach((el) => {
-// //   some.document.createElement(`li`);
-// // });
+
+const ulElements = document.getElementById(`ingredients`);
+
+const makeLiElement = (el) => {
+  const itemEl = document.createElement(`li`);
+  itemEl.classList.add(`item`);
+  itemEl.textContent = el;
+  return itemEl;
+};
+
+const galleryListItems = ingredients.map((el) => makeLiElement(el));
+ulElements.append(...galleryListItems);
