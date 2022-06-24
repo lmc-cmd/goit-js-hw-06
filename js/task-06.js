@@ -3,8 +3,6 @@
 const InputEl = document.querySelector("#validation-input");
 const validNumber = InputEl.attributes[2].nodeValue;
 const styleEl = document.querySelector(`style`);
-console.dir(styleEl.classList);
-console.dir(validNumber);
 
 InputEl.addEventListener("blur", () => {
   if (InputEl.value.length == validNumber) {
