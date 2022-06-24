@@ -1,3 +1,4 @@
+"use strict";
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -15,12 +16,15 @@ const images = [
 
 const galaryEl = document.querySelector(`.gallery`);
 const makeGaleryEL = ({ url, alt } = {}) =>
-  `<li class="gallery__item"><a href=""><img src=${url} alt=${alt} width="300" height=""300></a></li>  `;
+  `<li class="gallery__item"><a href=""><img src=${url} alt=${alt} width="300" height="200"
+    style= margin:20px></a></li>`;
 
 const makeGaleryBrutforce = images.map((el) => makeGaleryEL(el)).join("");
 galaryEl.insertAdjacentHTML("beforeend", makeGaleryBrutforce);
 galaryEl.style.cssText = "display: flex; flex-wrap: wrap; list-style: none;";
 // const liItem = galaryEl.children;
-// liItem.style.cssText = "style: none; height: 100%";
 // const listImem = document.querySelector(` ul .gallery__item`);
-// listImem.style.cssText = "style: none; height: 100%; margin: 15px";
+// liItem.style.cssText = "style: none; height: 100%";
+//  galaryEl.element.children.style.cssText = "style: none; height: 100%";
+// const liElememtns = galaryEl.children;
+// console.log(liElememtns);
