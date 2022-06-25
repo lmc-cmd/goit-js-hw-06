@@ -1,7 +1,8 @@
 "use strict";
 
 const btnDecrementEl = document.querySelector("[data-action]");
-const btnIncrementEl = document.querySelector("#counter > button:nth-child(3)");
+// const btnIncrementEl = document.querySelector("#counter > button:nth-child(3)");
+const btnIncrementEl = document.querySelector("[data-action=increment]");
 const counterEl = document.querySelector(`#value`);
 
 let counterValue = 0;

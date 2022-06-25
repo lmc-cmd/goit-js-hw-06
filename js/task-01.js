@@ -1,6 +1,4 @@
 `use strict`;
-// let some = document.getElementById(`categories`).children.length;
-// console.log(some);
 console.log(
   `Number of categories: ${document.querySelectorAll(`.item`).length}`
 );
