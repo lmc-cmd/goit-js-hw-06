@@ -8,8 +8,8 @@ formLoginEl.addEventListener(`submit`, onFormSubmit);
 function onFormSubmit(event) {
   event.preventDefault();
   if (
-    event.currentTarget.elements.email.value == 0 ||
-    event.currentTarget.elements.password.value == 0
+    event.currentTarget.elements.email.value == `` ||
+    event.currentTarget.elements.password.value == ``
   ) {
     return alert(`Пожалуйста, запоните все поля!`);
   } else {
